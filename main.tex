@@ -7,19 +7,26 @@
 % to avoid loading the natbib package, add option nonatbib:
 % \usepackage[nonatbib]{nips_2016}
 
-\usepackage{sty/nips_2016}
-
 % to compile a camera-ready version, add the [final] option, e.g.:
-% \usepackage[final]{nips_2016}
+% \usepackage[final]{sty/nips_2016}
+\usepackage{nips_2016}
 
-\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{booktabs}       % professional-quality tables
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{hyperref}       % hyperlinks
-\usepackage{url}            % simple URL typesetting
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage{microtype}      % microtypography
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{url}            % simple URL typesetting
+\usepackage{xcolor}         % colors
+
+% Watermark settings
+% use ``nostamp'' parameter if you don't need watermark
+\usepackage[printwatermark=true]{xwatermark}
+% \newwatermark[allpages,color=red!25,angle=45,scale=3]{Internal Use\\Only}
+\newwatermark[allpages,color=red!25,ypos=130]{Internal Use Only}
+% \newwatermark*[allpages,fontfamily=bch,color=gray!25,angle=45,scale=3,xpos=0,ypos=0,textmark=DRAFT]{}
 
 \title{Formatting instructions for NIPS 2016}
 
@@ -41,42 +48,40 @@
   Cranberry-Lemon University\\
   Pittsburgh, PA 15213 \\
   \texttt{hippo@cs.cranberry-lemon.edu} \\
-  %% examples of more authors
-  %% \And
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-  %% \AND
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-  %% \And
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-  %% \And
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
+  examples of more authors
+  \And
+  Coauthor \\
+  Affiliation \\
+  Address \\
+  \texttt{email} \\
+  \AND
+  Coauthor \\
+  Affiliation \\
+  Address \\
+  \texttt{email} \\
+  \And
+  Coauthor \\
+  Affiliation \\
+  Address \\
+  \texttt{email} \\
+  \And
+  Coauthor \\
+  Affiliation \\
+  Address \\
+  \texttt{email} \\
 }
 
 \begin{document}
-% \nipsfinalcopy is no longer used
 
 \maketitle
 
-
-\input{src/abstract}
-\input{src/submission_papers_nips}
-\input{src/general_formatting_instructions}
-\input{src/headings}
-\input{src/citations_figures_tables_references}
-\input{src/final}
-\input{src/preparing_pdf_files}
-\input{src/references}
+\input{abstract}
+\input{submission_papers_nips}
+\input{general_formatting_instructions}
+\input{headings}
+\input{citations_figures_tables_references}
+\input{final}
+\input{preparing_pdf_files}
+\input{references}
 
 \end{document}

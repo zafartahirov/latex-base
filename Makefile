@@ -1,6 +1,8 @@
 MAIN=main
 OUTDIR=out
 
+export TEXINPUTS:=$(TEXINPUTS):.:./sty:./src
+
 LATEX=pdflatex
 LATEXOPT=--shell-escape
 NONSTOP=--interaction=nonstopmode
